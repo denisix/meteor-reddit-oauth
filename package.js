@@ -18,6 +18,6 @@ Package.onUse(function(api) {
   api.use('http', ['client', 'server']);
   api.use('service-configuration', ['client', 'server']);
   api.export('RedditOAuth');
-  api.addFiles('server.js', 'server');
-  api.addFiles('client.js', 'client');
+  api.mainModule('server.js', 'server');
+  api.mainModule('client.js', 'client');
 });
